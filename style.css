@@ -231,8 +231,13 @@ body{
 
 @media(max-width:991px){
     .header{
-        padding: 12px 0;
+        padding: 13px 0px;
     }
+
+    .header.sticky{
+        padding: 10px 0px;
+    }
+
     .header .container{
         justify-content: space-between;
         margin:0 10px;
@@ -255,10 +260,6 @@ body{
     .header .menu ul li{
         background-color: #f1683a;
         padding-left: 20px;
-    }
-
-    .header.sticky{
-        padding: 15px 1px;
     }
 
     .header .menu .sub-menu{
