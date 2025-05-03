@@ -962,6 +962,112 @@ body{
 }
 
 
+/* -------------------- About & Notice Section -------------------- */
+#about_notice {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* stretch ensures equal height */
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 60px 60px;
+    background-color: #eee;
+    min-height: 100vh;
+}
+
+.about, .notice {
+    flex: 1;
+    min-width: 280px;
+    height: 400px; /* minimum height for both sections */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #f1683a;
+    margin-top: 80px;
+}
+
+.about h1, .notice h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.dash {
+    color: #f1683a;
+    font-weight: bold;
+}
+
+.about p {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 16px;
+    flex: 1; /* take available space */
+}
+
+.notice-cards-container {
+    flex: 1;
+    overflow-y: auto;
+    max-height: calc(100px * 3 + 20px); /* 3 notices + padding */
+    padding-right: 10px;
+}
+
+.notice-card {
+    background: #fafafa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid #f1683a;
+    border-radius: 4px;
+    min-height: 100px; /* Adjust notice card height */
+}
+
+.notice-card a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.notice-card a:hover {
+    color: #f1683a;
+}
+
+.notice-card p {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #about_notice {
+        flex-direction: column;
+        padding: 60px 20px;
+
+    }
+    .about, .notice {
+        width: 100%;
+        max-height: none;
+        margin-top: 40px;
+
+    }
+
+    .notice{
+        margin-top: 0px;
+    }
+    .notice-cards-container {
+        max-height: calc(100px * 2  ); /* 3 notices + padding */
+    }
+
+}
+
+
+
+
+
 
 
 /* --------------contact section-------------- */
