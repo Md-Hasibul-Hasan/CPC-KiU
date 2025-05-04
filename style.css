@@ -214,14 +214,17 @@ body{
     padding: 6px 16px;
     border-radius: 30px;
     font-weight: bold;
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: #f1683a;
     color: #fff;
     transition: all 0.3s ease;
 }
 
 .header-right a:hover {
-    background-color: #f1683a;
-    color: #fff;
+    background-color: #eee;
+    color: #f1683a;
+    border: 2px solid #f1683a;
+
 }
 
 .header-right .open-menu-btn{
@@ -454,12 +457,15 @@ body{
     height: 100%;
     position: absolute;
     inset: 0 0 0 0;
+
 }
-.carousel .list .item img{
+.carousel .list .item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(.5); /* darker effect */
 }
+
 .carousel .list .item .content{
     position: absolute;
     top: 20%;
@@ -472,6 +478,7 @@ body{
     color: #fff;
     text-shadow: 0 5px 10px #0004;
 }
+
 .carousel .list .item .author{
     font-weight: bold;
     letter-spacing: 10px;
@@ -719,7 +726,7 @@ body{
 
   .center h1 {
     font-size: 2.5em;
-    color: #f1683a;
+    color: #333;
     margin-bottom: 40px;
 
   }
@@ -747,12 +754,14 @@ body{
   }
   
   .filter-btn:hover {
-    background-color: #4d82ed;
+    /* background-color: #4d82ed; */
+    background-color: #f1683a;
     color: #fff;
   }
   
   .filter-btn.active {
-    border: 2px solid #4d82ed; 
+    /* border: 2px solid #4d82ed;  */
+    border: 2px solid #f1683a; 
   }
   
   
@@ -803,9 +812,9 @@ body{
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     flex-direction: column;
-    /* padding: 0 40px; */
+    /* padding: 0px 40px; */
     text-align: center;
     font-size: 14px;
     transition: height 0.5s;
@@ -819,15 +828,23 @@ body{
 
 .layer a{
     text-decoration: none;
-    color: #6b4aed;
+    /* color: #6b4aed; */
+    color: #f1683a;
     background: #fff;
-    font-size: 18px;
+    font-size: 14px;
     margin-top: 20px;
-    line-height: 60px;
-    width: 60px;
-    height: 60px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     text-align: center;
+    margin-bottom: 10px;
+}
+
+.layer a:hover{
+    background: #f1683a;
+    color: #fff;
+    transition: all 0.3s ease;
 }
 
 .card-item:hover img{
@@ -839,7 +856,7 @@ body{
 }
 
 .swiper-pagination{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .swiper-button-prev,
@@ -872,7 +889,7 @@ body{
 }
 
 .center_courses h1 {
-    color: #f1683a;
+    color: #333;
     margin-bottom: 60px;
     margin-top: 40px;
     font-size: 2.5em;
@@ -987,12 +1004,22 @@ body{
     flex-direction: column;
     border: 2px solid #f1683a;
     margin-top: 80px;
+
 }
+
+/* .about{
+    margin-left: 50px;
+}
+
+.notice{
+    margin-right: 50px;
+} */
 
 .about h1, .notice h1 {
     text-align: center;
     font-size: 24px;
     margin-bottom: 15px;
+    color: #333;
 }
 
 .dash {
@@ -1004,7 +1031,28 @@ body{
     text-align: justify;
     line-height: 1.6;
     font-size: 16px;
-    flex: 1; /* take available space */
+    /* flex: 1; take available space */
+}
+
+.about_btn {
+    text-decoration: none;
+    background: #f1683a;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 2px solid #eee;
+    transition: all 0.3s ease;
+    display: inline-block; 
+    padding: 9px 20px; 
+    margin: 0px auto; 
+    margin-top: 70px;
+}
+
+.about_btn:hover {
+    border-color: #f1683a; /* Change border color on hover */
+    background: #eee; /* Invert background and text color */
+    color: #f1683a;
 }
 
 .notice-cards-container {
@@ -1039,7 +1087,8 @@ body{
 .notice-card p {
     font-size: 14px;
     color: #777;
-    margin: 0;
+    bottom: 0;
+    padding-top: 10px;
 }
 
 /* Responsive */
@@ -1054,6 +1103,10 @@ body{
         max-height: none;
         margin-top: 40px;
 
+    }
+
+    .about_btn{
+        margin-top: 30px;
     }
 
     .notice{
@@ -1112,6 +1165,12 @@ body{
     padding-left: 35px;
 }
 
+.contact-left h1 {
+    font-size: 2.5em;
+    /* margin-bottom: 20px; */
+    color: #333;
+}
+
 .contact-right {
     flex-basis: 60%;
     min-width: 300px; /* responsive এর জন্য */
@@ -1150,14 +1209,16 @@ body{
 
 .btn.btn2 {
     display: inline-block;
+    font-weight: bold;
     background: #f1683a;
-    border-radius: 6px;
+    border: 2px solid white;
+    border-radius: 10px;
     padding: 10px 30px;
     margin-top: 10px;
     margin-bottom: 70px;
     color: white;
     text-decoration: none;
-    border: none;
+    /* border: none; */
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -1231,7 +1292,7 @@ form .btn2 {
 
 /* ------------------------------For Footer------------------------------ */
 footer {
-    background-color: #262626;
+    background-color: #17132f;
     color: #fff;
     padding: 20px 0 10px; /* 🔥 reduce padding */
     text-align: center;
@@ -1295,8 +1356,9 @@ footer {
 /* ------------ Page title ------------ */
 .page-title {
     /* text-align: center; */
-    background-color: #f1683a;
-    padding: 50px 0 50px 20px;
+    background-color: #17132f;
+    color: #fff;
+    padding: 50px 20px 40px 50px;
 }
 
 
@@ -1334,7 +1396,7 @@ footer {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     width: 320px;
-    height: 380px; 
+    height: 400px; 
     overflow: hidden;
     text-align: center;
     position: relative;
@@ -1350,7 +1412,7 @@ footer {
 }
 
 .member-card h3 {
-    margin: 10px 0 4px;
+    margin: 10px 0 10px 4px;
     font-size: 18px;
     position: relative;
 }
@@ -1358,7 +1420,9 @@ footer {
 .member-card p {
     font-size: 14px;
     color: #555;
-    /* margin: 0; */
+    margin: 0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 /* ------------- Floating icon box (hidden initially) ------------- */
@@ -1384,9 +1448,9 @@ footer {
 .icon-hover-box a {
     width: 24px; 
     height: 24px; 
-    background: #f1683a;
+    background: #333;
     color: #fff;
-    border-radius: 30%;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1397,7 +1461,7 @@ footer {
 
 /* icon hover effect */
 .icon-hover-box a:hover {
-    background: #333;
+    background: #f1683a;
 }
 
 /* ------------- Show icon box on hover ------------- */
@@ -1414,8 +1478,12 @@ footer {
 
 
 @media (max-width: 768px) {
+    .page-title {
+     padding: 60px 30px 40px 30px;
+     text-align: center;
+    }
     .page-title h1{
-        font-size: 28px;
+        font-size: 24px;
     }
     .page-title h3{
         font-size: 14px;
