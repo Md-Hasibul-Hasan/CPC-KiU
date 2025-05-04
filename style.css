@@ -699,8 +699,12 @@ body{
         font-size: 50px;
     }
     .arrows{
-        top: 77%;
+        top: 80%;
         right: 50%;
+    }
+    .thumbnail .item{
+        width: 130px;
+        height: 200px;
     }
 }
 
@@ -1058,6 +1062,12 @@ body{
     .ex_title h1 {
         font-size: 30px;
     }
+    .container_cards {
+        gap: 60px;
+        margin: 0 10px;
+    
+    }
+    
 
 }
 
