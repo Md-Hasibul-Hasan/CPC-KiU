@@ -484,7 +484,7 @@ body{
     font-size: larger;
     letter-spacing: 10px;
     color: #f1683a;
-    padding-left: 50px;
+    padding-left: 45px;
 }
 .carousel .list .item .title{
     font-size: 5em;
@@ -531,6 +531,7 @@ body{
     display: flex;
     gap: 10px;
     align-items: center;
+    /* visibility: hidden; */
 }
 .arrows button{
     width: 40px;
