@@ -480,10 +480,11 @@ body{
 }
 
 .carousel .list .item .author{
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: larger;
     letter-spacing: 10px;
     color: #f1683a;
-    padding-left: 60px;
+    padding-left: 50px;
 }
 .carousel .list .item .title{
     font-size: 5em;
@@ -689,14 +690,21 @@ body{
 @media screen and (max-width: 678px) {
     .carousel .list .item .content{
         padding-right: 0;
+        top: 20%;
+        max-width: 100%;
+        left: 0%;
+        transform: translateX(0%);
     }
     .carousel .list .item .content .author{
         font-size: 30px;
         padding: 10px;
         margin-bottom: 30px;
+        text-align: center;
     }
     .carousel .list .item .content .title{
         font-size: 50px;
+        padding:0px 5px;
+        text-align: center;
     }
     .arrows{
         top: 80%;
@@ -1393,7 +1401,8 @@ form .btn2 {
 
 /* ------------------------------For Footer------------------------------ */
 footer {
-    background-color: #17132f;
+    background-color: #090617;
+    /* background-color: #171b25; */
     color: #fff;
     padding: 20px 0 10px; /* 🔥 reduce padding */
     text-align: center;
