@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b61dd4f2ec.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -24,8 +25,6 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#event">Events</a></li>
                     <li><a href="#courses">Courses</a></li>
-                    <li><a href="#about_notice">About</a></li>
-                    <li><a href="#about_notice">Notices</a></li>
                     <li class="dropdown">
                         <a href="#executive_body">Panel</a>
                         <i class="fa-solid fa-chevron-down"></i>
@@ -49,6 +48,8 @@
                             </li>
                         </ul>
                     </li>
+                    <li><a href="#about_notice">About</a></li>
+                    <li><a href="#about_notice">Notices</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -129,8 +130,8 @@
 
    <!-- -------------------Events---------------------------->
 <section id="event">
-<div class="swiper" id="events">
-    <div class="card-wrapper">
+<div class="swiper" id="events" data-aos="fade-up" data-aos-duration="1000">
+    <div class="card-wrapper" data-aos="flip-up" data-aos-duration="1500">
         <div class="center">
             <h1><span class="dash">—</span> EVENTS <span class="dash">—</span></h1>
             <ul id="portfolio-flters">
@@ -230,12 +231,12 @@
    <!-- -------------------Course---------------------------->
 
 <section id="courses">
-    <div class="center_courses">
+    <div class="center_courses" data-aos="fade-up" data-aos-duration="1000">
         <h1><span class="dash">—</span> COURSES <span class="dash">—</span></h1>
     </div></div>
     
-    <div class="card_wrapper_courses swiper">
-        <div class="swiper-wrapper">
+    <div class="card_wrapper_courses swiper" data-aos="fade-up" data-aos-duration="1000">
+        <div class="swiper-wrapper"  data-aos="flip-up" data-aos-duration="1500">
             <div class="swiper-slide">
                 <a href="#" class="card_link_courses">
                     <img src="images/course/course1.png" alt="" class="card_image_courses">
@@ -281,53 +282,53 @@
     <!-- -------------------Executive---------------------------->
     
     <section id="executive_body">
-        <div class="ex_container">
+        <div class="ex_container" >
 
 
             <!-- ----------------------------Mentor wing-------------------- -->
-            <div class="ex_title">
+            <div class="ex_title" data-aos="fade-up" data-aos-duration="1000">
                 <h1><span class="dash">—</span> EXECUTIVE BODY <span class="dash">—</span></h1>
             </div>
     
     
             <!-- Members -->
-            <div class="container_cards">
-                <div class=" card">
+            <div class="container_cards" data-aos="fade-up" data-aos-duration="1000">
+                <div class=" card" data-aos="flip-left" data-aos-duration="1500">
                     <a href="current_panel.html#admin">
                         <img src="images/Cards/admin.png" alt="Member1">
                         <h3>Admin Panel</h3>
                     </a>
                 </div>
 
-                <div class=" card">
+                <div class=" card" data-aos="flip-left" data-aos-duration="1500">
                     <a href="current_panel.html#mentor">
                         <img src="images/Cards/mentor.png" alt="Member1">
                         <h3>Mentorship Wing</h3>
                     </a>
                 </div>
     
-                <div class=" card">
+                <div class=" card" data-aos="flip-left" data-aos-duration="1500">
                     <a href="current_panel.html#IT">
                         <img src="images/Cards/IT.png" alt="Member1">
                         <h3>IT Wing</h3>
                     </a>
                 </div>
     
-                <div class=" card">
+                <div class=" card" data-aos="flip-left" data-aos-duration="1500">
                     <a href="current_panel.html#executive">
                         <img src="images/Cards/executive.png" alt="Member1">
                         <h3>Executive Wing</h3>
                     </a>
                 </div>
     
-                <div class=" card">
+                <div class=" card" data-aos="flip-left" data-aos-duration="1500">
                     <a href="current_panel.html#finance">
                         <img src="images/Cards/adv.png" alt="Member1">
                         <h3>Advertising & Finance Management Wing</h3>
                     </a>
                 </div>
     
-                <div class=" card">
+                <div class=" card" data-aos="flip-left" data-aos-duration="1500">
                     <a href="current_panel.html#public">
                         <img src="images/Cards/public.png" alt="Member1">
                         <h3>Public Relations Wing</h3>
@@ -353,8 +354,8 @@
     
     <!-- -------------------About & Notices---------------------------->
 
-    <section id="about_notice">
-        <div class="about" id="about">
+    <section id="about_notice" >
+        <div class="about" id="about" data-aos="fade-up-right" data-aos-duration="1500">
             <h1><span class="dash">—</span> ABOUT <span class="dash">—</span></h1>
             <p>
                 CPC-KiU Computer and Programming Club aims to build a user-friendly competitive environment
@@ -364,7 +365,7 @@
             </p>
             <a href="#" class="about_btn">Learn More</a>
         </div>
-        <div class="notice" id="notice">
+        <div class="notice" id="notice" data-aos="fade-up-left" data-aos-duration="1500">
             <h1><span class="dash">—</span> NOTICES <span class="dash">—</span></h1>
             <div class="notice-cards-container">
                 <div class="notice-card">
@@ -394,7 +395,7 @@
 <section id="contact">
     <div class="container_contact">
         <div class="row">
-            <div class="contact-left">
+            <div class="contact-left" data-aos="fade-up-right" data-aos-duration="1500">
                 <h1 class="center_contact"><span class="dash">—</span> Contact Us <span class="dash">—</span></h1>
                 <p> <i class="fa-solid fa-location-dot"></i>  Temporary Campus KiU (Gurudayal College), <span class="space">Kishoreganj, Bangladesh</span></p>
                 <p> <i class="fa-solid fa-paper-plane"></i>  bcpc@bsmru.ac.bd</p>
@@ -405,7 +406,7 @@
                     <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
-            <div class="contact-right">
+            <div class="contact-right" data-aos="fade-up-left" data-aos-duration="1500">
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
@@ -443,7 +444,10 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
     <script src="index.js"></script>
+    
 </body>
 </html>
 

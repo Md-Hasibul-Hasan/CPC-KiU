@@ -7,7 +7,7 @@
 
     <script src="https://kit.fontawesome.com/b61dd4f2ec.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,8 +26,6 @@
                     <li><a href="index.html#home">Home</a></li>
                     <li><a href="index.html#events">Events</a></li>
                     <li><a href="index.html#courses">Courses</a></li>
-                    <li><a href="index.html#about_notice">About</a></li>
-                    <li><a href="index.html#about_notice">Notices</a></li>
                     <li class="dropdown">
                         <a href="#">Panel</a>
                         <i class="fa-solid fa-chevron-down"></i>
@@ -36,7 +34,7 @@
                                 <a href=""><span>Faculty Panel</span></a>
                                 <i class="fa-solid fa-chevron-down"></i>
                                 <ul class="sub-menu sub-menu-2">
-                                    <li><a href="current_faculty.html"><span>Current Faculty Panel</span></a></li>
+                                    <li><a href="former_faculty.html"><span>Current Faculty Panel</span></a></li>
                                     <li><a href="former_faculty.html"><span>Former Faculty Panel</span></a></li>
                                 </ul>
                             </li>
@@ -51,6 +49,8 @@
                             </li>
                         </ul>
                     </li>
+                    <li><a href="index.html#about_notice">About</a></li>
+                    <li><a href="index.html#about_notice">Notices</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -68,6 +68,7 @@
 
 
 
+
     <div class="page-title">
         <h1><br><strong>FACULTY PANEL</strong></h1>
         <h3><br><strong>Acting Panel (Effective from November 2024)</strong></h3>
@@ -76,12 +77,12 @@
     <section id="team">
         <div class="container">
 
-            <div class="container_title">
+            <div class="container_title" data-aos="fade-up" data-aos-duration="1500">
                 <h2><span class="dash">—</span> CHIEF PATRON <span class="dash">—</span></h2>
             </div>
     
             <!-- Leader -->
-            <div class="container_leader">
+            <div class="container_leader" data-aos="fade-up" data-aos-duration="1500">
                 <div class="member-card">
                     <img src="images/adv/saaj.jpg" alt="Leader">
                     <div class="icon-hover-box">
@@ -93,12 +94,12 @@
                 </div>
             </div>
 
-            <div class="container_title">
+            <div class="container_title" data-aos="fade-up" data-aos-duration="1500">
                 <h2><span class="dash">—</span> CHIEF ADVISOR <span class="dash">—</span></h2>
             </div>
 
             <!-- Leader -->
-            <div class="container_leader">
+            <div class="container_leader" data-aos="fade-up" data-aos-duration="1500">
                 <div class="member-card">
                     <img src="images/adv/tuhin.png" alt="Leader">
                     <div class="icon-hover-box">
@@ -142,7 +143,8 @@
 </footer>
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
     <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
